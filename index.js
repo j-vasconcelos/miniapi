@@ -24,6 +24,14 @@ app.get("/professores", (req, res )=> {
     res.send(professores);
 }) ;
 
+app.get("/unidade", (req, res )=> {
+    let unidade = {
+                    tipo: "FATEC",
+                    nome : "Rubens Lara",
+                    cidade : "Santos"
+    }
+    res.send(unidade)
+}) ;
 
 app.listen(3000, () => {
     console.log("funfando...");
